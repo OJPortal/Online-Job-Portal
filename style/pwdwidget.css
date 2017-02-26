@@ -1,0 +1,56 @@
+.pwdwidgetdiv
+{
+	text-align: center;
+	width:225px;
+}
+
+.pwdfield
+{
+	text-align: center;
+    display:block;
+}
+
+.pwdopsdiv
+{
+	text-align: center;
+	display: block;
+	float: left;
+	margin-right:6px;	
+}
+.pwdopsdiv a
+{
+
+	text-align: center;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px; 
+}
+
+.pwdstrengthbar
+{
+	text-align: center;
+	float:right;
+	background:#cccccc;
+	height:4px;
+	margin:0;
+}
+
+.pwdstrength
+{
+	text-align: center;
+	float:right; 
+	height:20px;
+	width:70px;
+	margin-top:3px;
+
+}
+.pwdstrengthstr
+{
+	text-align: center;
+    float:right;
+	clear:both;
+	height:14px;
+	margin-top:0px;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px; 
+
+}
