@@ -1,0 +1,27 @@
+#sec{
+	position:relative; width:100%;
+
+}
+ h2{
+font:bold 50px OCR A Std;
+padding:20px;
+width:100%;
+text-align:center;
+}
+
+#head h1{
+	font-size: 50px;
+}
+#head{
+	text-align: center;
+}
+#na{
+
+}
+#na li{
+	display: inline-block;
+	list-style: none;
+	font:bold 14px Tahoma;
+	text-decoration: none;
+
+}
