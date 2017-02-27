@@ -44,7 +44,7 @@ if(isset($_POST['submitted']))
 
                 <li class="active"><a href="home.html">Home</a></li>
                 <li><a href="About.html">About Us</a></li>
-                <li><a href="contact.html">News</a></li>
+                <li><a href="contact.html">New Trend</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs
                         <span class="caret"></span></a>
@@ -54,7 +54,7 @@ if(isset($_POST['submitted']))
                         <li><a href="#">Chemical-Engg</a></li>
                     </ul>
                 </li>
-                <li><a href="news.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
             </ul>
 
