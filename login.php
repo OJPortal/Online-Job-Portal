@@ -96,6 +96,8 @@ if(isset($_POST['submitted']))
 </div>
 <div class='short_explanation'><a href='reset-pwd-req.php'>Forgot Password?</a></div>
 </fieldset>
+<fieldset class="container-fluid">
+
 <div class="register-button">
 
 <div class="btn-group"><p>
@@ -103,6 +105,8 @@ if(isset($_POST['submitted']))
 </h3> </p>
 </div>
 </div>
+
+</fieldset>
 </form>
 <!-- client-side Form Validations:
 Uses the excellent form validation script from JavaScript-coder.com-->
