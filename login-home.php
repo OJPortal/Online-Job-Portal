@@ -41,19 +41,19 @@ if(!$fgmembersite->CheckLogin())
             <div class="collapse navbar-collapse" id="mynav">
             <ul class="nav navbar-nav">
 
-                <li class="active"><a href="home.html">Home</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li><a href="contact.html">News</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">New Trends</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">IT-jobs</a></li>
+                        <li><a href="job.html">IT-jobs</a></li>
                         <li><a href="#">Mechanical</a></li>
                         <li><a href="#">Chemical-Engg</a></li>
                     </ul>
                 </li>
-                <li><a href="news.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
             </ul>
 

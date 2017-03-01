@@ -17,7 +17,7 @@ if(isset($_POST['submitted']))
       <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
       <title>Login</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
       <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css" />
@@ -42,9 +42,9 @@ if(isset($_POST['submitted']))
             <div class="collapse navbar-collapse" id="mynav">
             <ul class="nav navbar-nav">
 
-                <li class="active"><a href="home.html">Home</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li><a href="contact.html">New Trend</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">News</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs
                         <span class="caret"></span></a>
@@ -60,7 +60,7 @@ if(isset($_POST['submitted']))
 
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                
                 <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
             </div>
@@ -95,7 +95,11 @@ if(isset($_POST['submitted']))
     <input type='submit' name='Submit' value='Submit' />
 </div>
 <div class='short_explanation'><a href='reset-pwd-req.php'>Forgot Password?</a></div>
+<div class="btn-group">
+<a href="register.php" class="btn btn-success  ">Register here</a>
 </fieldset>
+
+</div>
 </form>
 <!-- client-side Form Validations:
 Uses the excellent form validation script from JavaScript-coder.com-->
@@ -113,7 +117,7 @@ Uses the excellent form validation script from JavaScript-coder.com-->
 
 // ]]>
 </script>
-</div>
+
 </div>
 <!--
 Form Code End (see html-form-guide.com for more info.)
