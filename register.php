@@ -22,7 +22,7 @@ if(isset($_POST['submitted']))
     <script src="scripts/pwdwidget.js" type="text/javascript"></script>   
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
@@ -48,12 +48,12 @@ if(isset($_POST['submitted']))
 
                 <li class="active"><a href="home.html">Home</a></li>
                 <li><a href="About.html">About Us</a></li>
-                <li><a href="contact.html">New Trend</a></li>
+                <li><a href="contact.html">New Trends</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">IT-jobs</a></li>
+                        <li><a href="job.html">IT-jobs</a></li>
                         <li><a href="#">Mechanical</a></li>
                         <li><a href="#">Chemical-Engg</a></li>
                     </ul>
@@ -64,7 +64,6 @@ if(isset($_POST['submitted']))
 
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
             </div>

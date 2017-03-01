@@ -44,12 +44,12 @@ if(isset($_POST['submitted']))
 
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="#">New Trends</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">IT-jobs</a></li>
+                        <li><a href="job.html">IT-jobs</a></li>
                         <li><a href="#">Mechanical</a></li>
                         <li><a href="#">Chemical-Engg</a></li>
                     </ul>
