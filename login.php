@@ -95,10 +95,13 @@ if(isset($_POST['submitted']))
     <input type='submit' name='Submit' value='Submit' />
 </div>
 <div class='short_explanation'><a href='reset-pwd-req.php'>Forgot Password?</a></div>
-<div class="btn-group">
-<a href="register.php" class="btn btn-success  ">Register here</a>
 </fieldset>
+<div class="register-button">
 
+<div class="btn-group"><p>
+<h3>New to Portal? &nbsp; &nbsp;<a href="register.php" class="btn btn-success  ">Register here</a>
+</h3> </p>
+</div>
 </div>
 </form>
 <!-- client-side Form Validations:
