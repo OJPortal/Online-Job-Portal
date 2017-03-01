@@ -44,12 +44,12 @@ if(isset($_POST['submitted']))
 
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">New Trends</a></li>
+                <li><a href="#">News</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="job.html">IT-jobs</a></li>
+                        <li><a href="#">IT-jobs</a></li>
                         <li><a href="#">Mechanical</a></li>
                         <li><a href="#">Chemical-Engg</a></li>
                     </ul>
@@ -96,13 +96,18 @@ if(isset($_POST['submitted']))
 </div>
 <div class='short_explanation'><a href='reset-pwd-req.php'>Forgot Password?</a></div>
 </fieldset>
-<div class="register-button">
-
+<fieldset>
+<div class="container-fluid">
+  <div class="register-button">
 <div class="btn-group"><p>
 <h3>New to Portal? &nbsp; &nbsp;<a href="register.php" class="btn btn-success  ">Register here</a>
 </h3> </p>
 </div>
 </div>
+</div>
+</fieldset>
+
+
 </form>
 <!-- client-side Form Validations:
 Uses the excellent form validation script from JavaScript-coder.com-->
