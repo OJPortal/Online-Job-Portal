@@ -3,11 +3,14 @@
 </title>
 
 <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style type="text/css">
+ <link rel="STYLESHEET" type="text/css" href="CSS_Home.css" />
+      <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+      <title>Login</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <style type="text/css">
 form
 {
 width:500px;
@@ -26,8 +29,53 @@ padding: 20px 20px;
 }
  </style></head>
 <body>
+<div id="di">
+    <header id="head">
+        <h1> ONLINE JOB PORTAL </h1>
+    </header>
+    <nav class="navbar navbar-inverse navbar-top-fixed">
 
-<form><div class="form-group">
+        <div class="container-fluid">
+         <div class="navbar-header">
+             <a href="#" class="navbar-brand">Job Portal</a>
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+         </div>
+            <div class="collapse navbar-collapse" id="mynav">
+            <ul class="nav navbar-nav">
+
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">News</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">IT-jobs</a></li>
+                        <li><a href="#">Mechanical</a></li>
+                        <li><a href="#">Chemical-Engg</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+</div>
+<div class="container-fluid">
+<form>
+<div class="form-group">
 <h2 align="left">Job Required</h2>
  <div class="form-group">
     <label for="Name of Job">Name of Job:</label>
@@ -66,6 +114,8 @@ padding: 20px 20px;
     <label form="Payement">Payment:</label>
     <input type="Payement" class="form-control" id="Payement">
   </div>
-</form></div>
+</form>
+</div>
+</div>
 </body>
 </html>
