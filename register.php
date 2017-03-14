@@ -96,6 +96,11 @@ if(isset($_POST['submitted']))
     <span id='register_email_errorloc' class='error'></span>
 </div>
 <div class='container'>
+    <label for='phoneno' >Phone No.*:</label><br/>
+    <input type='text' name='phoneno' id='phoneno' value='<?php echo $fgmembersite->SafeDisplay('phoneno') ?>' maxlength="50" /><br/>
+    <span id='register_phoneno_errorloc' class='error'></span>
+</div>
+<div class='container'>
     <label for='username' >UserName*:</label><br/>
     <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' maxlength="50" /><br/>
     <span id='register_username_errorloc' class='error'></span>
@@ -109,6 +114,15 @@ if(isset($_POST['submitted']))
     <div id='register_password_errorloc' class='error' style='clear:both'></div>
 </div>
 
+<div class='container'>
+    <label for='registrationtype'>Registration Type:</label><br/>
+    <input type="radio" name="registrationtype" id="registrationtype" value='jobseeker' maxlength="50" />
+    <label1 for='registrationtype' style="padding: 10px;">Job Seeker</label1>
+    <input type="radio" name="registrationtype" id="registrationtype"  value='jobprovider' maxlength="50" />
+    <label1 for='registrationtype' style="padding: 10px;">Job Provider</label1><br/>
+    <span id='register_registrationtype_errorloc' class='error'></span>
+
+</div>
 <div class='container'>
     <input type='submit' name='Submit' value='Submit' />
 </div>
@@ -134,9 +148,13 @@ Uses the excellent form validation script from JavaScript-coder.com-->
 
     frmvalidator.addValidation("email","email","Please provide a valid email address");
 
+    frmvalidator.addValidation("phoneno","req","Please provide a phoneno");
+
     frmvalidator.addValidation("username","req","Please provide a username");
     
     frmvalidator.addValidation("password","req","Please provide a password");
+
+    frmvalidator.addValidation("registrationtype","selectradio","Please select registrationtype");
 
 // ]]>
 </script>
