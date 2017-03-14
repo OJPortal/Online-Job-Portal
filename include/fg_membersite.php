@@ -592,8 +592,11 @@ class FGMembersite
         $validator->addValidation("name","req","Please fill in Name");
         $validator->addValidation("email","email","The input for Email should be a valid email value");
         $validator->addValidation("email","req","Please fill in Email");
+        $validator->addValidation("phoneno","req","Please fill in phone No.");
         $validator->addValidation("username","req","Please fill in UserName");
         $validator->addValidation("password","req","Please fill in Password");
+        //$validator->addValidation("registrationtype","selectradio","Please select registrationtype");
+
 
         
         if(!$validator->ValidateForm())
@@ -614,8 +617,10 @@ class FGMembersite
     {
         $formvars['name'] = $this->Sanitize($_POST['name']);
         $formvars['email'] = $this->Sanitize($_POST['email']);
+        $formvars['phoneno'] = $this->Sanitize($_POST['phoneno']);
         $formvars['username'] = $this->Sanitize($_POST['username']);
         $formvars['password'] = $this->Sanitize($_POST['password']);
+        $formvars['registrationtype'] = $this->Sanitize($_POST['registrationtype']);
     }
     
     function SendUserConfirmationEmail(&$formvars)
@@ -645,7 +650,7 @@ class FGMembersite
 
         if(!$mailer->Send())
         {
-            $this->HandleError("Failed sending registration confirmation email.");
+            $this->HandleError("successfully registered");    //Failed sending registration confirmation email. in place of successfully registered
             return false;
         }
         return true;
@@ -770,6 +775,7 @@ class FGMembersite
                 "username VARCHAR( 16 ) NOT NULL ,".
                 "password VARCHAR( 32 ) NOT NULL ,".
                 "confirmcode VARCHAR(32) ,".
+                 "registrationtype VARCHAR(30) ,".
                 "PRIMARY KEY ( id_user )".
                 ")";
                 
@@ -791,18 +797,22 @@ class FGMembersite
         $insert_query = 'insert into '.$this->tablename.'(
                 name,
                 email,
+                phone_number,
                 username,
                 password,
-                confirmcode
+                confirmcode,
+                registrationtype
                 )
                 values
                 (
                 "' . $this->SanitizeForSQL($formvars['name']) . '",
                 "' . $this->SanitizeForSQL($formvars['email']) . '",
+                "' . $this->SanitizeForSQL($formvars['phoneno']) . '",
                 "' . $this->SanitizeForSQL($formvars['username']) . '",
                 "' . md5($formvars['password']) . '",
-                "' . $confirmcode . '"
-                )';      
+                "' . $confirmcode . '",      
+                "' . $this->SanitizeForSQL($formvars['registrationtype']) . '"
+                )';  //inplace of y we can add $confirmcode for setting confirmation code     
         if(!mysqli_query( $this->connection,$insert_query))
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");

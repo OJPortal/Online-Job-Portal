@@ -17,7 +17,7 @@ $fgmembersite->InitDB(/*hostname*/'localhost',
                       /*username*/'root',
                       /*password*/'',
                       /*database name*/'TRY',
-                      /*table name*/'ojp');
+                      /*table name*/'ojp1');
 
 //For better security. Get a random string from this link: http://tinyurl.com/randstr
 // and put it here

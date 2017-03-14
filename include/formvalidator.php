@@ -57,7 +57,7 @@ define("E_VAL_SELMIN_CHECK_FAILED","Please select minimum %d options for %s");
 define("E_VAL_SELONE_CHECK_FAILED","Please select an option for %s");
 define("E_VAL_EQELMNT_CHECK_FAILED","Value of %s should be same as that of %s");
 define("E_VAL_NEELMNT_CHECK_FAILED","Value of %s should not be same as that of %s");
-
+define("E_VAL_SHOULD_SEL_CHECK_FAILED", "e val should sel check failed");
 
 
 /**
